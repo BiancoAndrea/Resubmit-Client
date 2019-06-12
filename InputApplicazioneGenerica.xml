@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns2:NewElement xmlns:tns2="http://www.example.org/NewXMLSchema" xmlns:bw="http://www.tibco.com/bw/xpath/bw-custom-functions">
+	<tns2:ID>1234567</tns2:ID>
+	<tns2:Appnode>BWEclipseAppNode</tns2:Appnode>
+	<tns2:NomeServizio>Flusso1ApplicazioneGenerica</tns2:NomeServizio>
+	<tns2:TipoTest>error</tns2:TipoTest>
+</tns2:NewElement>
