@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_h9dN8HrjEemuHMZb7ODPRQ" targetNamespace="http://tns.tibco.com/bw/composite/ApplicazioneGenerica.module" name="ApplicazioneGenerica.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_iLfp8HrjEemuHMZb7ODPRQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iLvhkHrjEemuHMZb7ODPRQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iLzL8HrjEemuHMZb7ODPRQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iL2PQHrjEemuHMZb7ODPRQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iL4rgHrjEemuHMZb7ODPRQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iL7u0HrjEemuHMZb7ODPRQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iL9kAHrjEemuHMZb7ODPRQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iMBOYHrjEemuHMZb7ODPRQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_iMDDkHrjEemuHMZb7ODPRQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_1GC5gHsREemnFLvpTWMfTg" name="ComponentMain" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_1GC5gXsREemnFLvpTWMfTg" processName="applicazionegenerica.module.Main"/>
+  </sca:component>
+  <sca:component xmi:id="_1703AIONEem-s-1AbY_FWw" name="ComponentResubmitMassivo" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_1703AYONEem-s-1AbY_FWw" processName="applicazionegenerica.module.ResubmitMassivo"/>
+  </sca:component>
+</sca:composite>

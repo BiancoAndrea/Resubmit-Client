@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+
+    <element name="NewElement" type="tns:NewComplexType"></element>
+
+    <complexType name="NewComplexType">
+    	<sequence>
+    		<element name="ID" type="decimal"></element>
+    		<element name="Appnode" type="string"></element>
+    		<element name="NomeServizio" type="string"></element>
+    		<element name="TipoTest" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="NewElement1" type="tns:NewComplexType1"></element>
+
+    <complexType name="NewComplexType1">
+    	<sequence>
+    		<element name="NewElement" type="string"></element>
+    		<element name="NewElement1" type="string"></element>
+    		<element name="NewElement2" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>
