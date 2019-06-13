@@ -768,8 +768,7 @@
                     </tibex:eventSource>
                 </tibex:receiveEvent>
             </bpws:extensionActivity>
-            <bpws:scope name="ForEach" tibex:group="foreach"
-                tibex:indexToGlobal="false" tibex:xpdlId="99ca3b28-1af9-43df-9020-04eddef6772f">
+            <bpws:scope name="ForEach" tibex:group="foreach" tibex:xpdlId="99ca3b28-1af9-43df-9020-04eddef6772f">
                 <bpws:targets>
                     <bpws:target linkName="TimerToForEach"/>
                 </bpws:targets>
@@ -835,7 +834,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="concat('&lt;nullxml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;tns2:NewElement xmlns:tns2=&quot;http://www.example.org/NewXMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot;>&amp;crlf;&amp;tab;&lt;tns2:Appspace>', bw:getModuleProperty(&quot;BW.APPSPACE.NAME&quot;), '&lt;/tns2:Appspace>&amp;crlf;&amp;tab;&lt;tns2:NomeServizio>', $Servizio, '&lt;/tns2:NomeServizio>&amp;crlf;&amp;tab;&lt;tns2:TipoTest>', $TipoTest, '&lt;/tns2:TipoTest>&amp;crlf;&lt;/tns2:NewElement>')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="concat('&lt;nullxml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;tns2:NewElement xmlns:tns2=&quot;http://www.example.org/NewXMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot;>&lt;tns2:Appspace>', bw:getModuleProperty(&quot;BW.APPSPACE.NAME&quot;), '&lt;/tns2:Appspace>&lt;tns2:NomeServizio>', $Servizio, '&lt;/tns2:NomeServizio>&lt;tns2:TipoTest>', $TipoTest, '&lt;/tns2:TipoTest>&lt;/tns2:NewElement>')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
