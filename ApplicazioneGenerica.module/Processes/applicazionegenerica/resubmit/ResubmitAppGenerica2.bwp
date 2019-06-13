@@ -757,9 +757,10 @@
                     </bpws:source>
                     <bpws:source linkName="OperazioniDiResubmitToReply">
                         <tibex:DesignExpression>
-                            <tibex:expression expression="1=0" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                            <tibex:expression
+                                expression="contains($operationIn/parameters/ns6:Resubmit_CommonInterface_Input/ns6:XML_RICH, &quot;ok&quot;)" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                         </tibex:DesignExpression>
-                        <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[1=0]]></bpws:transitionCondition>
+                        <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[contains($operationIn.parameters/ns6:XML_RICH, "ok")]]></bpws:transitionCondition>
                     </bpws:source>
                 </bpws:sources>
             </bpws:empty>

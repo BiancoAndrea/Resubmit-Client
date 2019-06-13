@@ -307,8 +307,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.1/@activity/@activities.1/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="86"
-                                    xsi:type="notation:Bounds" y="47"/>
+                                    x="164"
+                                    xsi:type="notation:Bounds" y="55"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -325,10 +325,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.1/@activity/@activities.1/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="108"
-                                    width="400"
-                                    x="2"
-                                    xsi:type="notation:Bounds" y="2"/>
+                                    height="176"
+                                    width="337" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -482,17 +480,6 @@
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.1/@activity/@activities.1/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[12, -1, -143, 11]$[131, -10, -24, 2]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
@@ -502,6 +489,17 @@
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[25, 6, -339, -89]$[192, 50, -172, -45]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.1/@activity/@activities.1/@activity/@activity/@links/@children.0"/>
+            <bendpoints points="[12, -4, -221, 0]$[209, 0, -24, 4]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -565,9 +563,7 @@
                     </tibex:eventSource>
                 </tibex:receiveEvent>
             </bpws:extensionActivity>
-            <bpws:scope name="ForEach" tibex:group="foreach"
-                tibex:indexOriginalName="index"
-                tibex:indexToGlobal="false" tibex:xpdlId="99ca3b28-1af9-43df-9020-04eddef6772f">
+            <bpws:scope name="ForEach" tibex:group="foreach" tibex:xpdlId="99ca3b28-1af9-43df-9020-04eddef6772f">
                 <bpws:targets>
                     <bpws:target linkName="TimerToForEach"/>
                 </bpws:targets>
@@ -606,7 +602,7 @@
                                     </bpws:targets>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/CommonResubmit&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;SetResubmit-input&quot; match=&quot;/&quot;>&lt;tns:Resubmit_CommonInterface_Input>&lt;tns:TIPO_RICH>&lt;xsl:value-of select=&quot;&amp;quot;Flusso1ApplicazioneGenerica&amp;quot;&quot;/>&lt;/tns:TIPO_RICH>&lt;tns:XML_RICH>&lt;xsl:value-of select=&quot;'&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?>&amp;lt;tns2:NewElement xmlns:tns2=&amp;quot;http://www.example.org/NewXMLSchema&amp;quot; xmlns:bw=&amp;quot;http://www.tibco.com/bw/xpath/bw-custom-functions&amp;quot;>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:ID />&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:Appnode>BWEclipseAppNode&amp;lt;/tns2:Appnode>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:NomeServizio>Flusso2ApplicazioneGenerica&amp;lt;/tns2:NomeServizio>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:TipoTest>error&amp;lt;/tns2:TipoTest>&amp;#xD;&amp;#xA;&amp;lt;/tns2:NewElement>'&quot;/>&lt;/tns:XML_RICH>&lt;tns:STATUS>&lt;xsl:value-of select=&quot;&amp;quot;STATUS_TO_RESUB&amp;quot;&quot;/>&lt;/tns:STATUS>&lt;tns:PROC_NAME>&lt;xsl:value-of select=&quot;concat(bw:getModuleProperty(&amp;quot;BW.DOMAIN.NAME&amp;quot;), &amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPSPACE.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPNODE.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPLICATION.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPLICATION.VERSION&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;))&quot;/>&lt;/tns:PROC_NAME>&lt;tns:DOC_LOG_ID>&lt;xsl:value-of select=&quot;tib:random(1,1000)&quot;/>&lt;/tns:DOC_LOG_ID>&lt;tns:BUS_KEY>&lt;xsl:value-of select=&quot;tib:random(1,1000)&quot;/>&lt;/tns:BUS_KEY>&lt;/tns:Resubmit_CommonInterface_Input>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/CommonResubmit&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot; xmlns:tib=&quot;http://www.tibco.com/bw/xslt/custom-functions&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;SetResubmit-input&quot; match=&quot;/&quot;>&lt;tns:Resubmit_CommonInterface_Input>&lt;tns:TIPO_RICH>&lt;xsl:value-of select=&quot;&amp;quot;Flusso1ApplicazioneGenerica&amp;quot;&quot;/>&lt;/tns:TIPO_RICH>&lt;tns:XML_RICH>&lt;xsl:value-of select=&quot;'&amp;lt;nullxml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?>&amp;lt;tns2:NewElement xmlns:tns2=&amp;quot;http://www.example.org/NewXMLSchema&amp;quot; xmlns:bw=&amp;quot;http://www.tibco.com/bw/xpath/bw-custom-functions&amp;quot;>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:Appnode>BWEclipseAppNode&amp;lt;/tns2:Appnode>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:NomeServizio>Flusso2ApplicazioneGenerica&amp;lt;/tns2:NomeServizio>&amp;#xD;&amp;#xA;&amp;#x9;&amp;lt;tns2:TipoTest>error&amp;lt;/tns2:TipoTest>&amp;#xD;&amp;#xA;&amp;lt;/tns2:NewElement>'&quot;/>&lt;/tns:XML_RICH>&lt;tns:STATUS>&lt;xsl:value-of select=&quot;&amp;quot;STATUS_TO_RESUB&amp;quot;&quot;/>&lt;/tns:STATUS>&lt;tns:PROC_NAME>&lt;xsl:value-of select=&quot;concat(bw:getModuleProperty(&amp;quot;BW.DOMAIN.NAME&amp;quot;), &amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPSPACE.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPNODE.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPLICATION.NAME&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.APPLICATION.VERSION&amp;quot;),&amp;quot;_&amp;quot;,bw:getModuleProperty(&amp;quot;BW.PROCESS.NAME&amp;quot;))&quot;/>&lt;/tns:PROC_NAME>&lt;tns:DOC_LOG_ID>&lt;xsl:value-of select=&quot;tib:random(1,1000)&quot;/>&lt;/tns:DOC_LOG_ID>&lt;tns:BUS_KEY>&lt;xsl:value-of select=&quot;tib:random(1,1000)&quot;/>&lt;/tns:BUS_KEY>&lt;/tns:Resubmit_CommonInterface_Input>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:CallProcess
                                     moduleRef="com.atos.frwk.resubmit.shared"
