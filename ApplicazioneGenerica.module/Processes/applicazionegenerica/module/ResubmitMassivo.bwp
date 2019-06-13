@@ -834,7 +834,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="concat('&lt;nullxml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;tns2:NewElement xmlns:tns2=&quot;http://www.example.org/NewXMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot;>&lt;tns2:Appspace>', bw:getModuleProperty(&quot;BW.APPSPACE.NAME&quot;), '&lt;/tns2:Appspace>&lt;tns2:NomeServizio>', $Servizio, '&lt;/tns2:NomeServizio>&lt;tns2:TipoTest>', $TipoTest, '&lt;/tns2:TipoTest>&lt;/tns2:NewElement>')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="concat('&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;tns2:NewElement xmlns:tns2=&quot;http://www.example.org/NewXMLSchema&quot; xmlns:bw=&quot;http://www.tibco.com/bw/xpath/bw-custom-functions&quot;>&lt;tns2:Appspace>', bw:getModuleProperty(&quot;BW.APPSPACE.NAME&quot;), '&lt;/tns2:Appspace>&lt;tns2:NomeServizio>', $Servizio, '&lt;/tns2:NomeServizio>&lt;tns2:TipoTest>', $TipoTest, '&lt;/tns2:TipoTest>&lt;/tns2:NewElement>')" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
