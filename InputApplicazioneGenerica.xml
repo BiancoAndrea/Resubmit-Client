@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><tns2:NewElement xmlns:tns2="http://www.example.org/NewXMLSchema" xmlns:bw="http://www.tibco.com/bw/xpath/bw-custom-functions">
-	<tns2:Appspace>BWEclipseAppNode</tns2:Appspace>
+	<tns2:Appspace>BWEclipseAppSpace</tns2:Appspace>
 	<tns2:NomeServizio>Flusso1ApplicazioneGenerica</tns2:NomeServizio>
 	<tns2:TipoTest>ok</tns2:TipoTest>
 </tns2:NewElement>
