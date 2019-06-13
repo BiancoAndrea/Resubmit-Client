@@ -5,7 +5,7 @@
 
     <complexType name="NewComplexType">
     	<sequence>
-    		<element name="ID" type="decimal"></element>
+    		<element name="ID" type="decimal" minOccurs="0" maxOccurs="1"></element>
     		<element name="Appnode" type="string"></element>
     		<element name="NomeServizio" type="string"></element>
     		<element name="TipoTest" type="string"></element>
